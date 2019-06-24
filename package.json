@@ -3,6 +3,7 @@
   "version": "2.1.0",
   "description": "The core implementation of worlds for prismarine",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "pretest": "npm run lint",
     "lint": "standard",
@@ -43,7 +44,8 @@
   "dependencies": {
     "event-promise": "0.0.1",
     "fifo": "^2.3.0",
-    "prismarine-chunk": "^1.0.1",
+    "prismarine-block": "file:///home/ron/git/prismarine-block",
+    "prismarine-chunk": "file:///home/ron/git/prismarine-chunk",
     "prismarine-provider-anvil": "^2.0.0"
   }
 }
