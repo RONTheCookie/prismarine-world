@@ -230,10 +230,9 @@ class World extends EventEmitter {
         (await this.getColumnAt(pos)).setBiome(posInChunk(pos), biome);
         this.saveAt(pos);
     }
+    static pickVer(mcVersion) {
+        Anvil = require("prismarine-provider-anvil").Anvil(mcVersion);
+    }
 }
 
-function loader(mcVersion) {
-    Anvil = require("prismarine-provider-anvil").Anvil(mcVersion);
-}
-module.exports.World = World; 
-module.exports = loader;
+module.exports = World;

@@ -2,7 +2,7 @@
   "name": "prismarine-world",
   "version": "2.1.0",
   "description": "The core implementation of worlds for prismarine",
-  "main": "index.js",
+  "main": "src/world.js",
   "types": "index.d.ts",
   "scripts": {
     "pretest": "npm run lint",

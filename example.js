@@ -1,4 +1,5 @@
-var World = require('./')('1.8')
+var World = require("./");
+World.pickVersion("1.8");
 var Chunk = require('prismarine-chunk')('1.8')
 var Vec3 = require('vec3')
 
