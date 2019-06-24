@@ -44,8 +44,8 @@
   "dependencies": {
     "event-promise": "0.0.1",
     "fifo": "^2.3.0",
-    "prismarine-block": "file:///home/ron/git/prismarine-block",
-    "prismarine-chunk": "file:///home/ron/git/prismarine-chunk",
+    "prismarine-block": "RONTheCookie/prismarine-block",
+    "prismarine-chunk": "RONTheCookie/prismarine-chunk",
     "prismarine-provider-anvil": "^2.0.0"
   }
 }
