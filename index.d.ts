@@ -7,10 +7,10 @@ import { Block } from "prismarine-block";
 
 export default function setVersion(mcVersion: string): void;
 interface iniFunc {
-    (x: number, y: number, z: number);
+    (x: number, y: number, z: number): Chunk;
 }
 interface chunkGeneratorFunc {
-    (chunkX: number, chunkZ: number);
+    (chunkX: number, chunkZ: number): Chunk;
 }
 export class World {
     constructor(chunkGenerator: chunkGeneratorFunc, regionFolder: string, savingInterval?: number);
