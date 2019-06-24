@@ -4,17 +4,16 @@
 import { Vec3 } from "vec3";
 import { Chunk } from "prismarine-chunk";
 import { Block } from "prismarine-block";
-export = prismarine_world;
 
-declare function prismarine_world(mcVersion: string): any;
+export default function setVersion(mcVersion: string): void;
 interface iniFunc {
     (x: number, y: number, z: number);
 }
 interface chunkGeneratorFunc {
     (chunkX: number, chunkZ: number);
 }
-declare class World {
-    constructor(chunkGenerator?, regionFolder?, savingInterval?: number);
+export class World {
+    constructor(chunkGenerator: chunkGeneratorFunc, regionFolder: string, savingInterval?: number);
 
     initialize(
         iniFunc: iniFunc,
